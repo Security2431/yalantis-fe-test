@@ -4,6 +4,8 @@ import { createGlobalStyle } from 'styled-components'
 
 import { thumbnails } from './jsonList.json'
 
+import './App.css'
+
 const GlobalStyled = createGlobalStyle`
   *, :after, :before {
     box-sizing: border-box;
