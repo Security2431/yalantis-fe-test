@@ -1,0 +1,32 @@
+{
+	"thumbnails": [
+		{
+	        "id": "56c782f1978fdf9a0100df52",
+	        "date": "2018-10-01T11:03:23.000Z",
+			"src": "/img/waterfall.jpg",
+			"title": "Handsome waterfall",
+			"position": 0
+		},
+		{
+	        "id": "56c782f197fe2bad471b3740",
+	        "date": "2018-10-01T11:03:23.000Z",
+			"src": "/img/nature.jpg",
+			"title": "Amazing nature",
+			"position": 1
+		},
+		{
+	        "id": "56c782fghgfc2c3268ddb3206",
+	        "date": "2018-10-01T11:03:23.000Z",
+			"src": "/img/mountain.jpg",
+			"title": "Exciting mountain",
+			"position": 2
+		},
+		{
+	        "id": "56c782f2f197fe2b3268ddb32",
+	        "date": "2018-10-01T11:03:23.000Z",
+			"src": "/img/lake.jpg",
+			"title": "Mistery lake",
+			"position": 3
+		}
+	]
+}
