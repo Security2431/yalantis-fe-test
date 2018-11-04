@@ -21,28 +21,32 @@ const Figure = styled.figure`
       transform: translate(100%, 0);
     }
   `}
+  
   ${props => props.position === 2 && css`
     ${Figcaption} {
       transform: translate(0, 100%);
     }
   `}
+
   ${props => props.position === 3 && css`
     ${Figcaption} {
       transform: translate(-100%, 0);
+    }
+  `}
+
+  ${props => props.isSmall === true && css`
+    @media (min-width: 576px) {
+      ${Img} {
+        height: 200px;
+        object-fit: cover;
+      }
     }
   `}
 `
 
 const Img = styled.img`
   max-width: 100%;
-
-  @media (min-width: 576px) {
-    & {
-      height: 200px;
-      object-fit: cover;
-    }
-  }
-
+  height: auto;
 `
 
 const Figcaption = styled.figcaption`
@@ -78,13 +82,15 @@ export default class Thumbnail extends Component {
   }
 
   static defaultProps = {
-    position: 0
+    position: 0,
+    isSmall: false
   }
 
   render() {
     const props = this.props
+
     return (
-      <Figure position={props.position}>
+      <Figure position={props.position} isSmall={props.isSmall}>
         <Img src={props.src} alt={props.title} />
         <Figcaption>{props.title}</Figcaption>
       </Figure>
