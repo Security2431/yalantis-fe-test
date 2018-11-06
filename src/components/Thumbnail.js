@@ -61,16 +61,19 @@ const Figcaption = styled.figcaption`
   justify-content: center;
   padding: 10px;
   background-color: #00000070;
+  opacity: 0;
   font-size: 22px;
   line-height: 1.4;
   color: #fff;
+  text-align: center;
   letter-spacing: 1.1px;
-  transition: transform .3s ease-out;
+  word-break: break-all;
+  transition: transform .3s ease-out, opacity .3s ease-out;
 
   ${Figure}:hover & {
+    opacity: 1;
     transform: translate(0, 0);
   }
-
 `
 
 
