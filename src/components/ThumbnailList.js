@@ -8,7 +8,6 @@ import Thumbnail from './Thumbnail'
 
 const Thumbnails = styled.section`
   padding: 30px 0;
-
 `
 const Col = styled.div`
     position: relative;
